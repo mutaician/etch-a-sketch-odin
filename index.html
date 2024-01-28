@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Etch A Sketch</h1>
+    <div class="header">
+        <button class="sim">Start Simulation</button>
+        <button class="reset">Reset</button>
+        <button class="squares">Edit Grid Squares</button>
+        <div>
+            <label for="intervalRange">Speed</label>
+            <input type="range" id="intervalRange" min="0" max="1000" value="500" step="50">
+            <span id="intervalValue">500 ms</span>
+        </div>
+
+    </div>
+    <div id="container"></div>
+    <script src="./script.js"></script>
+</body>
+</html>

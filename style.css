@@ -1,0 +1,57 @@
+:root {
+    --main-width: 80vw;
+    --main-height: 80vh;
+    --grid-size: 0;
+    --grid-width: calc(var(--main-width) / var(--grid-size));
+    --grid-height: calc(var(--main-height) / var(--grid-size));
+}
+
+body {
+    background-color: rgb(177, 207, 205);
+    margin: 0;
+}
+
+#container {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* padding: 24px; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+}
+
+.grid {
+    height: var(--grid-height);
+    width: var(--grid-width);
+    background-color: white;
+    /* border: 1px solid; */
+}
+
+button {
+    align-self: center;
+    padding: 16px;
+    margin: 0 16px;
+    border-radius: 16%;
+    background-color: #a19fe7;
+    display: flex;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.reset {
+    color: rgb(190, 32, 32);
+}
+
+h1 {
+    text-align: center;
+}
